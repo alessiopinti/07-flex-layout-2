@@ -46,13 +46,40 @@ body {
 
 .center {
   display: flex;
+
+  flex-grow: 1;
+
 }
 
 .sidebar {
   display: flex;
+  padding: 16px;
+  width: 300px;
 }
 
 .footer {
 margin-top: auto;
+display: flex;
+justify-content: center;
+align-items: center;
   
 }
+
+.cards {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+ul {
+  list-style-type: none;
+  
+ }
+
+ a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  
+ }
