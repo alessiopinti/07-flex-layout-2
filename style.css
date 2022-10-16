@@ -30,29 +30,27 @@ body {
 }
 
 /* --------------------------------------------------------------------------------------- */
-
-.container {
- display: flex;
- min-height: 100vh;
- flex-direction: column;
- justify-content: flex-start;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
+
 .header {
+  display: flex;
+  align-items: center;
   font-size: 32px;
   font-weight: 900;
   padding: 16px;
 }
 
-.center {
+.body {
+  flex: 1;
   display: flex;
-
-  flex-grow: 1;
-
 }
 
 .sidebar {
-  display: flex;
+  flex-shrink: 0;
   padding: 16px;
   width: 300px;
 }
@@ -65,17 +63,16 @@ align-items: center;
   
 }
 
-.cards {
-  padding: 32px;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   
  }
+
+ li {
+  margin-bottom: 16px;
+}
 
  a {
   text-decoration: none;
@@ -83,3 +80,15 @@ ul {
   color: white;
   
  }
+
+ .container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+}
